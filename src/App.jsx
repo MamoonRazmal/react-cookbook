@@ -1,14 +1,14 @@
-
-import './App.css'
-import Mamoon from './Components/Mamoon'
+import "./App.css";
+import Mamoon from "./Components/Mamoon";
+import Kevin from "./Components/Kevin";
 
 function App() {
-  
   return (
     <>
-      <Mamoon/>
+      <Mamoon />
+      <Kevin />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
