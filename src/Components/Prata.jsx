@@ -1,6 +1,6 @@
 import { useEffect ,useState} from "react";
 import { createClient } from "contentful";
-
+import { NavLink } from "react-router-dom";
 export default function Prata(){
     const[recepe,Setrecepe]= useState([])
     const client = createClient({
@@ -19,7 +19,7 @@ console.log("this is the value of recepe2",recepe[1]);
 },[])
     return (
         <>
-      
+        <NavLink to={"/Breakfast"} id="nav" activeClassName="active">Back TO Main</NavLink>
       
         {recepe.map((x)=>{
             console.log("value rrr ",x.fields.foodName)

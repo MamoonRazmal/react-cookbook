@@ -1,5 +1,6 @@
 import { useEffect ,useState} from "react";
 import { createClient } from "contentful";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 export default function Frenchfries(){
     const[recepe,Setrecepe]= useState([])
@@ -21,7 +22,7 @@ let s=0;
     return (
         <>
       
-      
+      <NavLink to={"/Breakfast"} id="nav" activeClassName="active">Back TO Main</NavLink>
         {recepe.map((x)=>{
            
             console.log("value rrr ",x.fields.foodName)

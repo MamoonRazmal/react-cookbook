@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom";
 import cookbook3 from './cookbook3.jpg'
+
+
 export default function Landing_page(){
     return(
       <div className="main_div">
         <div  className="menu">
-            <img src="images.jpeg" />
-        <NavLink to={"/Landing_page_Recepes"}>recepes</NavLink>
-        <NavLink to={""}>Collections</NavLink>
-        <NavLink to={""}>Tips</NavLink>
+          
+            <NavLink to={"/Breakfast"}  id="nav" activeClassName="active">Breakfast</NavLink>
+        <NavLink to={"/Lunch"} id="nav" activeClassName="active">Lunch</NavLink>
+        <NavLink to={"/Dinner"} id="nav" activeClassName="active">  Dinner</NavLink>
+        <NavLink to={""} id="nav" activeClassName="active">Collections</NavLink>
+        <NavLink to={""} id="nav" activeClassName="active">Tips</NavLink>
 
         </div>
         <></>

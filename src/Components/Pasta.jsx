@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
 import { useEffect, useState } from "react";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 export default function Pasta(){
     const [recipes, setReceips] = useState();
@@ -19,6 +20,7 @@ export default function Pasta(){
         
       }, []);
     return (<>
+       <NavLink to={"/Lunch"}>Back to Main</NavLink>
         {recipes &&
         recipes?.map((element)=>{
             if(element.fields.foodName==="Pasta pesto WITH GARLIC & ROSEMARY CHICKEN"){

@@ -6,9 +6,9 @@ export default function Landing_page_Recepes(){
       <div className="main_div">
         <div  className="menu">
             <img src="images.jpeg" />
-        <NavLink to={"/Breakfast"}>Breakfast</NavLink>
-        <NavLink to={"/Lunch"}>Lunch</NavLink>
-        <NavLink to={""}>Dinner</NavLink>
+        <NavLink to={"/Breakfast"} id="nav" activeClassName="active" >Breakfast</NavLink>
+        <NavLink to={"/Lunch"}  id="nav" activeClassName="active">Lunch</NavLink>
+        <NavLink to={"/Dinner"}  id="nav" activeClassName="active">Dinner</NavLink>
 
         </div>
         <></>

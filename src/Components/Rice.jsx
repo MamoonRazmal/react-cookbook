@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 import { useEffect, useState } from "react";
 import "./style.css";
-
+import { NavLink } from "react-router-dom";
 export default function Pasta() {
   const [recipes, setReceips] = useState();
   const client = createClient({
@@ -19,6 +19,7 @@ export default function Pasta() {
   }, []);
   return (
     <>
+      <NavLink to={"/Dinner"}>Back TO Dinner Section</NavLink>
       {recipes &&
         recipes?.map((element) => {
           console.log("test", element.fields.foodName);
