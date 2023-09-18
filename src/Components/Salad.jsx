@@ -33,7 +33,7 @@ export default function Pasta() {
                 <div className="mainClass">
                   <h1>{element.fields.foodName}</h1>
                 </div>
-                <h1>Hello from the return</h1>
+              
 
                 <div className="second">
                   <div className="instruction">
@@ -48,7 +48,7 @@ export default function Pasta() {
                     <img
                       src={element.fields.foodPhoto.fields.file.url}
                       alt="Pasta"
-                      height="800px"
+                      height="500px"
                     />{" "}
                   </div>
 

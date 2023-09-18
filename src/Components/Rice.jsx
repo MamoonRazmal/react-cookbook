@@ -42,8 +42,8 @@ export default function Pasta() {
                   <div className="imgs">
                     <img
                       src={element.fields.foodPhoto.fields.file.url}
-                      alt="Pasta"
-                      height="800px"
+                      alt="Rice"
+                      height="500px"
                     />{" "}
                   </div>
 

@@ -48,7 +48,7 @@ export default function Pasta() {
                   </div>
 
                   <div className="ingrid">
-                    <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
+                    <p>Food Ingredient {element.fields.foodIngredients} </p>{" "}
                   </div>
                 </div>
               </>
