@@ -5,7 +5,6 @@ export default function DinnerNavbar() {
     <>
       <div className="breakfast_link">
         <NavLink to={"/Dinner/Noodles"} id="nav" activeClassName="active">
-          {" "}
           Noodles
         </NavLink>
         <NavLink to={"/Dinner/Rice"}>Rice</NavLink>

@@ -4,7 +4,7 @@ import Rice from "./Pasta";
 import Salad from "./Lunch";
 import { Route, Routes, NavLink } from "react-router-dom";
 
-export default function Pranita() {
+export default function Kevin() {
   return (
     <>
       <DinnerNavbar />

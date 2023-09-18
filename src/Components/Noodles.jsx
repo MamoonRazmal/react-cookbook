@@ -11,6 +11,7 @@ export default function Pasta() {
   const getData = async () => {
     const entryItems = await client.getEntries();
     console.log("ENTRIES: ", entryItems.items);
+    console.log(entryItems.items);
     setReceips(entryItems.items);
   };
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Pasta() {
     <>
       {recipes &&
         recipes?.map((element) => {
+          console.log("test", element.fields.foodName);
           if (element.fields.foodName === "japanese ramen") {
             return (
               <>
