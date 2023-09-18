@@ -1,4 +1,5 @@
 
+
 import './App.css'
 import Mamoon from './Components/Mamoon'
 import Pranita from './Components/Pranita'
@@ -8,10 +9,16 @@ import Breakfast from './Components/Breakfast'
 import Lunch from "./Components/Lunch"
 import Landing_page_Recepes from "./Components/Landing_Page_Recepes"
 
+import "./App.css";
+import Mamoon from "./Components/Mamoon";
+import Pranita from "./Components/Pranita";
+import Kevin from "./Components/Kevin";
+
+
 function App() {
-  
   return (
     <>
+
     <Routes>
       <Route path="/" element={  <Landing_page />} />
       <Route path="/Breakfast" element={  <Breakfast  />} />
@@ -19,8 +26,13 @@ function App() {
       <Route path='/Landing_page_Recepes' element={<Landing_page_Recepes />} />
     
       </Routes>
+
+      <Mamoon />
+      <Pranita />
+      <Kevin />
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;

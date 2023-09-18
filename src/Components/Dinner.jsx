@@ -1,9 +1,10 @@
 import { createClient } from "contentful";
 import { useEffect, useState } from "react";
-import Vegbiryani from "./Vegbiryani";
-import Pasta from "./Pasta";
-import SmokyVegPatties from "./SmokyVegPatties";
+import Noodles from "./Vegbiryani";
+import Rice from "./Pasta";
+import Salad from "./SmokyVegPatties";
 import { NavLink, Route, Routes } from "react-router-dom";
+
 export default function Pranita() {
   const [recipes, setReceips] = useState();
   const client = createClient({
@@ -26,7 +27,7 @@ export default function Pranita() {
             return (
               <>
                 {/* <h1>{element.fields.foodName}</h1> */}
-                <Vegbiryani />
+                <Noodles />
               </>
             );
           } else if (
@@ -36,14 +37,14 @@ export default function Pranita() {
             return (
               <>
                 {/* <h1>{element.fields.foodName}</h1> */}
-                <Pasta />
+                <Salad />
               </>
             );
           } else if (element.fields.foodName === "Smoky Veg Patties") {
             return (
               <>
                 {/* <h1>{element.fields.foodName}</h1> */}
-                <SmokyVegPatties />
+                <Rice />
               </>
             );
           }
