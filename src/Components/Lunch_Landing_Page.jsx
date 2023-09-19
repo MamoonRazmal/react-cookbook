@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom"
-import Main_lunch_photo from "./Main_lunch_photo.jpeg"
+import main_lunch_photo from "./Main_lunch_photo.jpeg"
 
 export default function Lunch_Landing_Page(){
       // 
@@ -14,7 +14,7 @@ export default function Lunch_Landing_Page(){
         </div>
           <div className="Hero_section">
           
-                   <img src={Main_lunch_photo} height='500px' alt="this " />
+                   <img src={main_lunch_photo} height='500px' alt="this " />
 
 
 
