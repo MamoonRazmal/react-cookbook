@@ -26,7 +26,7 @@ let s=0;
         {recepe.map((x)=>{
            
             console.log("value rrr ",x.fields.foodName)
-            
+           
             
             if(x.fields.foodName==="French Fries"){
                
@@ -46,7 +46,7 @@ let s=0;
                 <div className="imgs">
                 <img src={x.fields.foodPhoto.fields.file.url} alt="French Fries" height="800px"/> </div>
                
-                <div className="ingrid"><p>Food Ingredient {x.fields.foodIngredients}</p> </div>  
+                <div className="ingrid"><p>Food Ingredient {x.fields.foodIngredients.value}</p> </div>  
                 </div>
                  </>
                 )

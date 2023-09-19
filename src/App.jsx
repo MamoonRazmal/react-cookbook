@@ -1,8 +1,7 @@
 
 
 import './App.css'
-import Mamoon from './Components/Mamoon'
-import Pranita from './Components/Pranita'
+
 import Landing_page from './Components/Landing_page'
 import { Routes,Route} from 'react-router-dom'
 import Breakfast from './Components/Breakfast'
