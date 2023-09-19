@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom"
-import main_lunch_photo from "./Main_lunch_photo.jpeg"
+import main_lunch_photo from "./Main_Lunch_photo.jpeg"
 
 export default function Lunch_Landing_Page(){
       // 
