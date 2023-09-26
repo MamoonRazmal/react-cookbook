@@ -20,7 +20,7 @@ export default function Pasta() {
   }, []);
   return (
     <>
-      <NavLink to={"/Dinner"}>Back TO Dinner Section</NavLink>
+      <NavLink to={"/Dinner"}>Back to Dinner</NavLink>
       {recipes &&
         recipes?.map((element) => {
           if (element.fields.foodName === "Fruit Salad") {
@@ -33,7 +33,6 @@ export default function Pasta() {
                 <div className="mainClass">
                   <h1>{element.fields.foodName}</h1>
                 </div>
-              
 
                 <div className="second">
                   <div className="instruction">
@@ -56,6 +55,8 @@ export default function Pasta() {
                     <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
                   </div>
                 </div>
+
+                <NavLink to={"/"}>Back to Main</NavLink>
               </>
             );
           }

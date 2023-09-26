@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
 }
 
@@ -39,4 +38,19 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.main_div {
+  background-image: url(./Components/Background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 5%;
+}
+p {
+  margin-bottom: 18.15%;
+}
+.hero_section {
+  margin-top: 20%;
+  color: white;
 }

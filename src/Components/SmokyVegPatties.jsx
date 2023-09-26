@@ -18,28 +18,38 @@ export default function SmokyVegPatties() {
   }, []);
   return (
     <>
-        <NavLink to={"/Lunch"}>Back to Main</NavLink>
+      <NavLink to={"/Lunch"}>Back to Lunch</NavLink>
       {recipes &&
         recipes?.map((element) => {
           if (element.fields.foodName === "Smoky Veg Patties") {
             return (
               <>
                 <div className="mainClass">
-                    
-                
-                    <h1>{element.fields.foodName}</h1></div>
-                  
-                    <div className="second">
-                   
-                    <div className="instruction">
-                   <br/> <ol><li>{element.fields.foodInstruction} </li></ol><br/>
-                   </div>
-                        
-                   <div className="imgs">
-                   <img src={element.fields.foodPhoto.fields.file.url} alt="Smoky Veg Patties" height="800px"/> </div>
-                  
-                   <div className="ingrid"><p>Food Ingredient {element.fields.foodIngredients}</p> </div>  
-                   </div>
+                  <h1>{element.fields.foodName}</h1>
+                </div>
+
+                <div className="second">
+                  <div className="instruction">
+                    <br />{" "}
+                    <ol>
+                      <li>{element.fields.foodInstruction} </li>
+                    </ol>
+                    <br />
+                  </div>
+
+                  <div className="imgs">
+                    <img
+                      src={element.fields.foodPhoto.fields.file.url}
+                      alt="Smoky Veg Patties"
+                      height="800px"
+                    />{" "}
+                  </div>
+
+                  <div className="ingrid">
+                    <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
+                  </div>
+                </div>
+                <NavLink to={"/"}>Back to Main</NavLink>
               </>
             );
           }

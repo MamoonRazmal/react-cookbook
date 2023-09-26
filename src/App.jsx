@@ -19,13 +19,12 @@ import Sandwhich from "./Components/Sandwhich";
 import Frenchfries from "./Components/Frenchfries";
 import "./App.css";
 import Not_found from "./Not_found";
-
+import Background from "./Components/Background.jpg";
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Landing_page />} />
-
         <Route
           path="/Landing_page_Recepes"
           element={<Landing_page_Recepes />}
