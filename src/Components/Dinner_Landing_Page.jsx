@@ -34,6 +34,7 @@ export default function Dinner_Landing_Page() {
           most famous Poetess Prinita and iam just Background Artist
         </p>
       </div>
+
       <footer className="footer">All right Reserved 2080</footer>
     </>
   );

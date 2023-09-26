@@ -45,7 +45,6 @@ export default function Vegbiryani() {
                       height="800px"
                     />{" "}
                   </div>
-
                   <div className="ingrid">
                     <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
                   </div>

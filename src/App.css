@@ -51,6 +51,15 @@ p {
   margin-bottom: 18.15%;
 }
 .hero_section {
-  margin-top: 20%;
   color: white;
+}
+.menu {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+a#nav {
+  color: white inherit;
 }

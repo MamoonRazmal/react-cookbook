@@ -2,8 +2,7 @@ import "./App.css";
 
 import Landing_page from "./Components/Landing_page";
 import { Routes, Route } from "react-router-dom";
-import Breakfast from "./Components/Breakfast";
-import Lunch from "./Components/Lunch";
+
 import Landing_page_Recepes from "./Components/Landing_Page_Recepes";
 import Salad from "./Components/Salad";
 import Rice from "./Components/Rice";
@@ -19,7 +18,6 @@ import Sandwhich from "./Components/Sandwhich";
 import Frenchfries from "./Components/Frenchfries";
 import "./App.css";
 import Not_found from "./Not_found";
-import Background from "./Components/Background.jpg";
 function App() {
   return (
     <>
@@ -33,13 +31,13 @@ function App() {
         <Route path="/Dinner/Noodles" element={<Noodles />} />
         <Route path="/Dinner/Rice" element={<Rice />} />
         <Route path="/Dinner/Salad" element={<Salad />} />
-        <Route path="/Lunch/Lunch" element={<Lunch />} />
+
         <Route path="/Lunch/Pasta" element={<Pasta />} />
         <Route path="/Lunch/Vegbiryani" element={<Vegbiryani />} />
         <Route path="/Lunch/SmokyVegPatties" element={<SmokyVegPatties />} />
         <Route path="/Lunch" element={<Lunch_Landing_Page />} />
         <Route path="/Breakfast" element={<Breakfast_Landing_Page />} />
-        <Route path="/breakfast/breakfast" element={<Breakfast />} />
+
         <Route path="/breakfast/prata" element={<Prata />} />
         <Route path="/breakfast/frenchfries" element={<Frenchfries />} />
         <Route path="/breakfast/sandwhich" element={<Sandwhich />} />
