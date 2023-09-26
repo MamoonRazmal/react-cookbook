@@ -20,8 +20,6 @@ import Frenchfries from "./Components/Frenchfries";
 import "./App.css";
 import Not_found from "./Not_found";
 
-// d
-
 function App() {
   return (
     <>
