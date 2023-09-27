@@ -37,9 +37,14 @@ export default function Frenchfries() {
               <div className="second">
                 <div className="instruction">
                   <br />{" "}
-                  <ol>
-                    <li>{x.fields.foodInstruction} </li>
-                  </ol>
+                  <ul>
+                    Instructions:
+                    <li>
+                      {x.fields.foodInstruction.map((ing) => (
+                        <li>{ing}</li>
+                      ))}{" "}
+                    </li>
+                  </ul>
                   <br />
                 </div>
 
@@ -52,7 +57,12 @@ export default function Frenchfries() {
                 </div>
 
                 <div className="ingrid">
-                  <p>Food Ingredient {x.fields.foodIngredients.value}</p>{" "}
+                  <ul>
+                    Food Ingredient{" "}
+                    {x.fields.foodIngredients.map((ing) => (
+                      <li>{ing}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <NavLink to={"/"}>Back to Main</NavLink>

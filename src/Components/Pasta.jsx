@@ -29,7 +29,7 @@ export default function Pasta() {
             return (
               <>
                 <div className="mainClass">
-                  <h1>{element.fields.foodName}</h1>
+                  <h1>Garlic Chicken Pasta</h1>
                 </div>
 
                 <div className="second">

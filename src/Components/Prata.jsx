@@ -35,7 +35,12 @@ export default function Prata() {
 
               <div className="second">
                 <div className="instruction">
-                  Food instruction {x.fields.foodInstruction} <br></br>
+                  <ul>
+                    Instruction:{" "}
+                    {x.fields.foodInstruction.map((ing) => (
+                      <li>{ing}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div className="imgs">
@@ -47,7 +52,12 @@ export default function Prata() {
                 </div>
 
                 <div className="ingrid">
-                  <p>Food Ingredient {x.fields.foodIngredients}</p>{" "}
+                  <ul>
+                    Food Ingredient:{" "}
+                    {x.fields.foodIngredients.map((ing) => (
+                      <li>{ing}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <NavLink to={"/"}>Back to Main</NavLink>

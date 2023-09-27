@@ -7,7 +7,7 @@ export default function Breakfast_Landing_Page() {
       <div className="breakfast_link">
         <NavLink to={"/breakfast/prata"} id="nav" activeClassName="active">
           {" "}
-          Prate
+          Prata
         </NavLink>
         <NavLink
           to={"/breakfast/frenchfries"}

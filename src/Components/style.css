@@ -57,3 +57,8 @@ body {
 a {
   text-decoration: none;
 }
+li {
+  display: flex;
+  list-style: none;
+  padding: 15%;
+}

@@ -33,9 +33,12 @@ export default function Pasta() {
                 <div className="second">
                   <div className="instruction">
                     <br />{" "}
-                    <ol>
-                      <li>{element.fields.foodInstruction} </li>
-                    </ol>
+                    <ul>
+                      Instructions:
+                      {element.fields.foodInstruction.map((inst) => (
+                        <li>{inst}</li>
+                      ))}
+                    </ul>
                     <br />
                   </div>
 
@@ -44,11 +47,16 @@ export default function Pasta() {
                       src={element.fields.foodPhoto.fields.file.url}
                       alt="Rice"
                       height="500px"
-                    />{" "}
+                    />
                   </div>
 
                   <div className="ingrid">
-                    <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
+                    <ul>
+                      Food Ingredient:
+                      {element.fields.foodIngredients.map((ing) => (
+                        <li>{ing}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
                 <NavLink to={"/"}>Back to Main</NavLink>

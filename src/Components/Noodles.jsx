@@ -27,15 +27,18 @@ export default function Pasta() {
             return (
               <>
                 <div className="mainClass">
-                  <h1>{element.fields.foodName}</h1>
+                  <h1>Japanese Ramen</h1>
                 </div>
 
                 <div className="second">
                   <div className="instruction">
-                    <br />{" "}
-                    <ol>
-                      <li>{element.fields.foodInstruction} </li>
-                    </ol>
+                    <ul>
+                      {" "}
+                      Food Instructions:
+                      {element.fields.foodInstruction.map((ing) => (
+                        <li>{ing}</li>
+                      ))}
+                    </ul>
                     <br />
                   </div>
 
@@ -44,11 +47,19 @@ export default function Pasta() {
                       src={element.fields.foodPhoto.fields.file.url}
                       alt="Pasta"
                       height="800px"
-                    />{" "}
+                    />
                   </div>
 
                   <div className="ingrid">
-                    <p>Food Ingredient {element.fields.foodIngredients} </p>{" "}
+                    <ul>
+                      Food Ingredient:
+                      {element.fields.foodIngredients.map((ing) => (
+                        <li>
+                          <input type="checkbox" />
+                          {ing}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
                 <NavLink to={"/"}>Back to Main</NavLink>

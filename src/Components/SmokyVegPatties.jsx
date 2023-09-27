@@ -25,15 +25,19 @@ export default function SmokyVegPatties() {
             return (
               <>
                 <div className="mainClass">
-                  <h1>{element.fields.foodName}</h1>
+                  <h1>Smoked Vegetarian Patties</h1>
                 </div>
 
                 <div className="second">
                   <div className="instruction">
                     <br />{" "}
-                    <ol>
-                      <li>{element.fields.foodInstruction} </li>
-                    </ol>
+                    <ul>
+                      {" "}
+                      Food Instrucions
+                      {element.fields.foodIngredients.map((ing) => (
+                        <li>{ing}</li>
+                      ))}
+                    </ul>
                     <br />
                   </div>
 
@@ -46,7 +50,12 @@ export default function SmokyVegPatties() {
                   </div>
 
                   <div className="ingrid">
-                    <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
+                    <ul>
+                      Food Ingredient:
+                      {element.fields.foodIngredients.map((ing) => (
+                        <li>{ing}</li>
+                      ))}
+                    </ul>{" "}
                   </div>
                 </div>
                 <NavLink to={"/"}>Back to Main</NavLink>
