@@ -46,8 +46,8 @@ function App() {
         <Route path="/breakfast/sandwhich" element={<Sandwhich />} />
         <Route path="*" element={<Not_found />} />
       </Routes>
-      <Gallery/>
-      <Footer/>
+      {/* <Gallery/> */}
+      {/* <Footer/> */}
     </>
   );
 }

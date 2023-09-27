@@ -18,56 +18,91 @@ export default function RecipeSample(){
         getData();
         
       }, []);
-    return (<>
-        {recipes &&
-        recipes?.map((element)=>{
-            if(element.fields.foodName==="Pasta pesto WITH GARLIC & ROSEMARY CHICKEN"){
-                return(<>
-               <body>
-	<div className="header">
-		<h1>{element.fields.foodName}</h1>
-	</div>
+//    return (<>
+//         {recipes &&
+//         recipes?.map((element)=>{
+//             if(element.fields.foodName==="Pasta pesto WITH GARLIC & ROSEMARY CHICKEN"){
+//                 return(<>
+//                <body>
+// 	<div className="header">
+// 		<h1>{element.fields.foodName}</h1>
+// 	</div>
 
-	<div className="recipe_details">
+// 	<div className="recipe_details">
 
-		<div className="description">
-			<p>This quick and delicious pasta dish is the perfect way to use up a summer bounty of basil and tomatoes! </p>
-			<p>Don't have a green thumb? Never fear! You can knock out this classic pasta dish in no time with a jar of prepared pesto sauce. </p>
+// 		<div className="description">
+// 			<p>This quick and delicious pasta dish is the perfect way to use up a summer bounty of basil and tomatoes! </p>
+// 			<p>Don't have a green thumb? Never fear! You can knock out this classic pasta dish in no time with a jar of prepared pesto sauce. </p>
 
 			
-		</div>
+// 		</div>
 
-		<figure>
-			<img src={element.fields.foodPhoto.fields.file.url}/>
+// 		<figure>
+// 			<img src={element.fields.foodPhoto.fields.file.url}/>
        
-			<figcaption>Photo by MKP cookbook</figcaption>
-		</figure>
+// 			<figcaption>Photo by MKP cookbook</figcaption>
+// 		</figure>
 
-	</div>
+// 	</div>
 
-	<div className="card2">
-		<div className="ingrit">
-			<h2>The Ingredients</h2>
-			<ul className="ingredients">
-				{element.fields.foodIngredients.map((x)=>(<li>{x}</li>))}
+// 	<div className="card2">
+// 		<div className="ingrit">
+// 			<h2>The Ingredients</h2>
+// 			<ul className="ingredients">
+// 				{element.fields.foodIngredients.map((x)=>(<li>{x}</li>))}
 				
-			</ul>
+// 			</ul>
 
-			<p className="variation">Variation: Got no time, or no fresh basil? Use a 6 ounce jar of prepared pesto instead.</p>
-		</div>
+// 			<p className="variation">Variation: Got no time, or no fresh basil? Use a 6 ounce jar of prepared pesto instead.</p>
+// 		</div>
 
-		<div className="process">
-			<h2>The Process</h2>
-			<ul className="instructions">
-				{element.fields.foodInstruction.map((x)=>(<li>{x}</li>))}
+// 		<div className="process">
+// 			<h2>The Process</h2>
+// 			<ol className="instructions">
+// 				{element.fields.foodInstruction.map((x)=>(<li>{x}</li>))}
 				
-			</ul>
-		</div>
-	</div>
-</body>
+// 			</ol>
+// 		</div>
+// 	</div>
+// </body>
                
-                </>)
-            }
-        })}
-    </>);
+//                 </>)
+//             }
+//         })} 
+
+
+        
+//     </>);
+return (<>
+{recipes &&
+            recipes?.map((element)=>{
+                 if(element.fields.foodName==="Pasta pesto WITH GARLIC & ROSEMARY CHICKEN"){
+return(<>
+<div id="card-container">
+  <div id="card-title">{element.fields.foodName}</div>
+   <div id="recipe-image">
+    <img src={element.fields.foodPhoto.fields.file.url}/>
+   </div>
+  <div id="details">Prep time: <span className="detail-value">20 minutes</span> | Cook time: <span className="detail-value">55 minutes</span> | Yield: <span className="detail-value">Makes one loaf</span></div>
+  <div id="card-items">
+    <span className="card-item-title">Ingredients</span>
+    <ul className="checkmark">
+      <li>{element.fields.foodIngredients.map((x)=>(<li>{x}</li>))}</li>
+      
+    </ul>
+  </div>
+  
+  <div id="method">
+  <span className="card-item-title">Method</span>
+    <ul className="checkmark">
+      <li>{element.fields.foodInstruction.map((x)=>(<li>{x}</li>))}</li>
+
+
+</ul>
+  </div>
+</div>
+</>);
 }
+            })}
+            </>);
+            }
