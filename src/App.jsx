@@ -16,8 +16,11 @@ import Breakfast_Landing_Page from "./Components/Breakfast_Landing_Page";
 import Prata from "./Components/Prata";
 import Sandwhich from "./Components/Sandwhich";
 import Frenchfries from "./Components/Frenchfries";
-import "./App.css";
+// import "./App.css";
+import Footer from "./Components/Footer";
 import Not_found from "./Not_found";
+import RecipeSample from "./Components/RecipeSample";
+import Gallery from "./Components/Gallery";
 function App() {
   return (
     <>
@@ -32,7 +35,7 @@ function App() {
         <Route path="/Dinner/Rice" element={<Rice />} />
         <Route path="/Dinner/Salad" element={<Salad />} />
 
-        <Route path="/Lunch/Pasta" element={<Pasta />} />
+        <Route path="/Lunch/RecipeSample" element={<RecipeSample />} />
         <Route path="/Lunch/Vegbiryani" element={<Vegbiryani />} />
         <Route path="/Lunch/SmokyVegPatties" element={<SmokyVegPatties />} />
         <Route path="/Lunch" element={<Lunch_Landing_Page />} />
@@ -43,6 +46,8 @@ function App() {
         <Route path="/breakfast/sandwhich" element={<Sandwhich />} />
         <Route path="*" element={<Not_found />} />
       </Routes>
+      <Gallery/>
+      <Footer/>
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function Lunch_Landing_Page() {
           {" "}
           Veg Biryani
         </NavLink>
-        <NavLink to={"/Lunch/Pasta"} id="nav" activeClassName="active">
+        <NavLink to={"/Lunch/RecipeSample"} id="nav" activeClassName="active">
           Pasta
         </NavLink>
         <NavLink

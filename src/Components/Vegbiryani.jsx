@@ -32,9 +32,9 @@ export default function Vegbiryani() {
                 <div className="second">
                   <div className="instruction">
                     <br />{" "}
-                    <ol>
-                      <li>{element.fields.foodInstruction} </li>
-                    </ol>
+                    <ul>
+                      {element.fields.foodInstruction.map((x)=>(<li>{x}</li>))}
+                    </ul>
                     <br />
                   </div>
 
@@ -46,7 +46,7 @@ export default function Vegbiryani() {
                     />{" "}
                   </div>
                   <div className="ingrid">
-                    <p>Food Ingredient {element.fields.foodIngredients}</p>{" "}
+                    <ul>Food Ingredient {element.fields.foodIngredients.map((x)=>(<li>{x}</li>))}</ul>
                   </div>
                 </div>
                 <NavLink to={"/"}>Back to Main</NavLink>
