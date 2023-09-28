@@ -7,19 +7,19 @@ export default function Lunch_Landing_Page() {
   return (
     <>
       <div className="breakfast_link">
-      <NavLink to={"/"} id="nav" activeClassName="active">
+      <NavLink to={"/"} id="navnew" activeClassName="active">
           Home
         </NavLink>
-        <NavLink to={"/Lunch/Vegbiryani"} id="nav" activeClassName="active">
+        <NavLink to={"/Lunch/Vegbiryani"} id="navnew" activeClassName="active">
           {" "}
           Veg Biryani
         </NavLink>
-        <NavLink to={"/Lunch/Pasta"} id="nav" activeClassName="active">
+        <NavLink to={"/Lunch/Pasta"} id="navnew" activeClassName="active">
           Pasta
         </NavLink>
         <NavLink
           to={"/Lunch/SmokyVegPatties"}
-          id="nav"
+          id="navnew"
           activeClassName="active"
         >
           Smoky Veg Patties

@@ -1,29 +1,36 @@
 import { useEffect, useState } from "react";
+import CSSProperties from "react"
 import { createClient } from "contentful";
 import { NavLink } from "react-router-dom";
+import PuffLoader from "react-spinners/PuffLoader"
 import "./Recipe.css";
 export default function Prata() {
+  
   // const [recepe, Setrecepe] = useState([]);
   // const client = createClient({
   //   accessToken: "BfNWgp-dFg2W-jxgkIPYNce0IS8N6g9LJT1JA1uTbGQ",
   //   space: "0q4y2er5mofe",
   // });
-
+const[loading,setloading]=useState(false)
   const [recepe, Setrecepe] = useState([])
   const api="https://cookbook-backend-zliv.onrender.com/recepe/"
 const getdata=async()=>{
+  setloading(true)
   const res=await fetch(api)
   const data=await res.json()
   Setrecepe(data);
+  setloading(false);
   // const getdata = async () => {
   //   const entrydata = await client.getEntries();
   //   console.log("entries", entrydata.items);
   //   Setrecepe(entrydata.items);
    };
    useEffect(() => {
+   
     getdata();
     console.log("Recepe = ", recepe);
     console.log("this is the value of recepe2", recepe[1]);
+    
   }, []);
   //  <li>{x.food_ingredients.map((x)=>(<li>{x}</li>))}</li>
   // <li>{x.food_instruction?.map((x)=>(<li>{x}</li>))}</li>
@@ -32,8 +39,9 @@ const getdata=async()=>{
       <NavLink to={"/Breakfast"} id="nav" activeClassName="active">
         Breakfast
       </NavLink>
-
-      {recepe.map((x) => {
+     
+      {loading?  <div id="loader"> <PuffLoader color="#36d7b7" />  </div>:recepe.map((x) => {
+       
         console.log("this value is got from recepe.map ", x.food_name);
 
         if (x.food_name === "Prata") {
@@ -42,21 +50,28 @@ const getdata=async()=>{
                <div id="card-container">
   <div id="card-title">{x.food_name}</div>
    <div id="recipe-image">
-    <img src={x.food_photo}/>
+    <img src={x.food_photo} height="400px" width="300px"/>
    </div>
   <div id="details">Prep time: <span className="detail-value">20 minutes</span> | Cook time: <span className="detail-value">55 minutes</span> | Yield: <span className="detail-value">Makes one loaf</span></div>
   <div id="card-items">
     <span className="card-item-title">Ingredients</span>
     <ul className="checkmark">
     
-      <li>{x.food_ingredients}</li>
+    {console.log("this is the array you wanted",x.food_ingredients.split(","))}
+   <li> {x.food_ingredients.split(",").map((a)=>(
+      <li>{a}</li>
+      ))}
+    </li>
     </ul>
   </div>
   
   <div id="method">
   <span className="card-item-title">Method</span>
     <ul className="checkmark">
-      <li>{x.food_instruction}</li>
+    <li> {x.food_instruction.split(",").map((a)=>(
+      <li>{a}</li>
+      ))}
+    </li>
 
 
 </ul>
@@ -66,7 +81,7 @@ const getdata=async()=>{
             </>
           );
         }
-      })}
+      }) }
     </>
-  );
+  )
 }

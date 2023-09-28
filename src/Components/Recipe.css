@@ -167,7 +167,11 @@ body {
 .detail-value {
   color: #455560;
 }
-
+#loader{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
 #card-items {
   background: #ededed;
   font-family: 'Oxygen', sans-serif;
@@ -197,7 +201,10 @@ ul.checkmark li:before {
 li {
   margin-bottom: 3px;
 }
-
+a#nav {
+	color: white inherit;
+  }
+  
 #method {
   background: #fff;
   border-left: solid 1px #ededed;
@@ -215,12 +222,17 @@ li {
   font-weight: bold;
   color: teal;
 }
-
+img{
+	height: 500px;
+	width: 500px;
+}
 #recipe-image {
  
   overflow: hidden;
-  height: 650px;
+  height: auto;
+  width: auto;
   background-size: cover;
+  background-position: bottom;
    background: #ededed;
    
 }

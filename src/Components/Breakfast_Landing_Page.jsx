@@ -6,22 +6,22 @@ export default function Breakfast_Landing_Page() {
   return (
     <>
       <div className="breakfast_link">
-      <NavLink to={"/"} id="nav" activeClassName="active">
+      <NavLink to={"/"} id="navnew" activeClassName="active">
           Home
         </NavLink>
-        <NavLink to={"/breakfast/prata"} id="nav" activeClassName="active">
+        <NavLink to={"/breakfast/prata"} id="navnew" activeClassName="active">
           {" "}
           Prata
         </NavLink>
         <NavLink
           to={"/breakfast/frenchfries"}
-          id="nav"
+          id="navnew"
           activeClassName="active"
         >
           {" "}
           French Fries
         </NavLink>
-        <NavLink to={"/breakfast/sandwhich"} id="nav" activeClassName="active">
+        <NavLink to={"/breakfast/sandwhich"} id="navnew" activeClassName="active">
           Sandwhich
         </NavLink>
        
