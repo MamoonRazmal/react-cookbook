@@ -1,0 +1,10 @@
+.links a{
+    color: teal;
+    font-size: 30px;
+    font-weight: bold;
+}
+.links h2{
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+}

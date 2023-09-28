@@ -1,0 +1,240 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	
+	color: #000;
+}
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 3em;
+	color: rgb(255, 255, 255);
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.header {
+	background: url("https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+img {
+	width: 100%;
+	box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.recipe_details {
+	background: url("./Background.jpg");
+	padding: 2em;
+	margin: 2em;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.description p {
+	margin: 2em;
+}
+.description ul {
+	margin: 2em;
+}
+.card2 {
+	padding: 1em;
+	background: white;
+	margin: 2em;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+h2 {
+	margin-bottom: 1em;
+}
+.ingrit {
+	padding: 2em;
+	line-height: 1.6;
+}
+.process {
+	padding: 2em;
+	line-height: 1.6;
+}
+.into {
+	padding: 0.5em 1em;
+}
+@media (min-width: 1000px) {
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 1em;
+		padding: 3em;
+		color: rgb(255, 255, 255);
+		text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	}
+	img {
+		width: 500px;
+		height: 500px;
+		box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+
+  margin-left: 300px;
+  margin-right: auto;
+  
+	}
+	.recipe_details {
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em;
+		padding: 3em;
+		background: white;
+		margin: 2em 0;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+		font-size: 1.3rem;
+    text-align: center;
+	}
+	.description p {
+		margin: 2em;
+	}
+	.description ul {
+		margin: 2em;
+	}
+
+	.card2 {
+		width: 90%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2em;
+		padding: 1em;
+		background: white;
+		margin: 2em 0 2em auto;
+		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9);
+	}
+	h2 {
+		margin-bottom: 1em;
+	}
+	.ingrit {
+		padding: 2em;
+		line-height: 1.6;
+	}
+	.process {
+		padding: 2em;
+		line-height: 1.6;
+	}
+	.into {
+		padding: 0.5em 1em;
+	}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+
+body {
+  background: #f9f9f9;
+}
+
+#card-container {
+  background: #ededed;
+  box-shadow: 0px 0px 200px #999;
+  font-family: 'Oxygen', sans-serif;
+  width: 90%;
+  height: 385px;
+  margin: 5% auto;
+}
+
+#card-title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #455560;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+#details {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 15px 20px;
+}
+
+.detail-value {
+  color: #455560;
+}
+
+#card-items {
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  padding: 20px
+}
+
+.card-item-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+ul.checkmark li:before {
+    color: #455560;
+    content:"\2713\0020";
+    font-weight: 600;
+    margin-left: -38px;
+    margin-right: 10px;
+}
+
+.checkmark li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: teal;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#method {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+#method li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: teal;
+}
+
+#recipe-image {
+ 
+  overflow: hidden;
+  height: 650px;
+  background-size: cover;
+   background: #ededed;
+   
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 8px;
+}
