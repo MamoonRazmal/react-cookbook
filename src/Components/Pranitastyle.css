@@ -2,6 +2,9 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
     /* background-color:#373a63 ; */
     overflow: hidden;
   }
@@ -20,6 +23,7 @@
   .maindiv:hover {
     background-color: #ddd;
     color: black;
+    font-size: 25px;
   }
   
   /* Add a color to the active/current link */

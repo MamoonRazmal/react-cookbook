@@ -26,12 +26,12 @@ export default function Landing_page() {
         <NavLink to={"/Breakfast"} className="maindiv"  >Breakfast</NavLink>
         <NavLink to={"/Lunch"}    className="maindiv" >Lunch</NavLink>
         <NavLink to={"/Dinner"}   className="maindiv" >Dinner</NavLink>
-        <NavLink to={"/Breakfast"} className="maindiv"  >New Additions</NavLink>
+        
         <NavLink to={"/Breakfast"} className="maindiv"  >Veg</NavLink>
         <NavLink to={"/Breakfast"} className="maindiv"  >Non-veg</NavLink>
         <NavLink to={"/Breakfast"} className="maindiv"  >Sweets and Sancks</NavLink>
         <NavLink to={"/Breakfast"} className="maindiv"  >Video Recipes</NavLink>
-        <NavLink to={"/Breakfast"} className="maindiv"  >Recipe Index</NavLink>
+       
         </div>
      
       <div className="Hero_section">
@@ -49,9 +49,10 @@ export default function Landing_page() {
         </p>
       </div>
 <Gallery/>
+</div>
 <Footer/>
       <footer className="footer"></footer>
-    </div>
+   
     </>
   );
 }

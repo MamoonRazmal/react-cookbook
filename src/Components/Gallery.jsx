@@ -76,14 +76,7 @@ export default function Gallery(){
             {/* <img src="" alt="Tenth description"/> */}
             <span className="description">Salad</span>
         </div>
-        <div>
-            {/* <img src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Eleventh description"/> */}
-            <span className="description">Pasta</span>
-        </div>
-        <div>
-            {/* <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Twelfth description"/> */}
-            <span className="description">Pizza</span>
-        </div>
+       
     </section>
     </>);
 }

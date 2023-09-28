@@ -4,7 +4,7 @@ import "./style.css";
 import "./Recipe.css";
 import { NavLink } from "react-router-dom";
 
-export default function Pasta() {
+export default function Salad() {
   const [recipes, setReceips] = useState();
   const client = createClient({
     space: "0q4y2er5mofe",
@@ -21,7 +21,7 @@ export default function Pasta() {
   }, []);
   return (
     <>
-      <NavLink to={"/Dinner"}>Back to Dinner</NavLink>
+      <NavLink to={"/Dinner"}>Dinner</NavLink>
       {recipes &&
         recipes?.map((element) => {
           if (element.fields.foodName === "Fruit Salad") {

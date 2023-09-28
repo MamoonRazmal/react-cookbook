@@ -2,6 +2,7 @@
   padding: 0%;
   margin: 0%;
   }
+
   
   .mainClass {
     display: flex;
@@ -39,14 +40,20 @@
     flex-direction: column;
   }
   .breakfast_link {
-    background-color: rgb(250, 189, 76);
+    color: white !important;
+    background-image: url(./Background.jpg);
+   
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
+  .breakfast_link:hover{
+    background-color:green;
+  }
   #nav {
+    color: white;
   }
   .active {
     color: #1dac71;

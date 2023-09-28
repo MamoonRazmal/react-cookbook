@@ -10,17 +10,7 @@ export default function Footer(){
             <p className="text-justify">MKP Cookbook <i>Be a chef </i>Cook delicious meal with our recipes</p> */}
           </div>
 
-          <div className="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul className="footer-links">
-              <li><a href="">Breakfast</a></li>
-              <li><a href="">Lunch</a></li>
-              <li><a href="">Dinner</a></li>
-              <li><a href="">Desserts</a></li>
-              <li><a href="">Cakes</a></li>
-              <li><a href="">Salad</a></li>
-            </ul>
-          </div>
+         
 
           <div className="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
@@ -29,7 +19,7 @@ export default function Footer(){
               <li><a href="">Contact Us</a></li>
               <li><a href="">Contribute</a></li>
               <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Sitemap</a></li>
+            
             </ul>
           </div>
         </div>
@@ -38,11 +28,12 @@ export default function Footer(){
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">MKP cookbook</a>.
+            <p className="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#">MKP cookbook</a>
             </p>
           </div>
-
+          </div>
+              <div className="link">
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
               <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
@@ -51,6 +42,7 @@ export default function Footer(){
               <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>   
             </ul>
           </div>
+         
         </div>
       </div>
 </footer>
