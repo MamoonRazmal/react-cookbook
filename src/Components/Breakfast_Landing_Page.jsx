@@ -27,7 +27,7 @@ export default function Breakfast_Landing_Page() {
       <div className="Hero_section">
         <img src={main_Breakfast_photo} height="500px" alt="this " />
       </div>
-      <div className="details">
+      {/* <div className="details">
         <p>
           {" "}
           In our Cookbook you can find as many recepes as you wanted such as
@@ -39,7 +39,7 @@ export default function Breakfast_Landing_Page() {
         </p>
       </div>
 
-      <footer className="footer">All right Reserved 2080</footer>
+      <footer className="footer">All right Reserved 2080</footer> */}
     </>
   );
 }

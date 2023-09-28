@@ -14,6 +14,7 @@ import SmokyVegPatties from "./Components/SmokyVegPatties";
 import Lunch_Landing_Page from "./Components/Lunch_Landing_Page";
 import Breakfast_Landing_Page from "./Components/Breakfast_Landing_Page";
 import Prata from "./Components/Prata";
+
 import Sandwhich from "./Components/Sandwhich";
 import Frenchfries from "./Components/Frenchfries";
 // import "./App.css";
@@ -36,7 +37,7 @@ function App() {
         <Route path="/Dinner/Rice" element={<Rice />} />
         <Route path="/Dinner/Salad" element={<Salad />} />
 
-        <Route path="/Lunch/RecipeSample" element={<RecipeSample />} />
+        <Route path="/Lunch/Pasta" element={<Pasta />} />
         <Route path="/Lunch/Vegbiryani" element={<Vegbiryani />} />
         <Route path="/Lunch/SmokyVegPatties" element={<SmokyVegPatties />} />
         <Route path="/Lunch" element={<Lunch_Landing_Page />} />
@@ -47,8 +48,8 @@ function App() {
         <Route path="/breakfast/sandwhich" element={<Sandwhich />} />
         <Route path="*" element={<Not_found />} />
       </Routes>
-      <Gallery/>
-      <Footer/>
+      {/* <Gallery/> */}
+      {/* <Footer/> */}
       {/* <Video/> */}
     </>
   );

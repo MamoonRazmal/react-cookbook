@@ -6,8 +6,8 @@ export default function Footer(){
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p className="text-justify">MKP Cookbook <i>Be a chef </i>Cook delicious meal with our recipes</p>
+            {/* <h6>About</h6>
+            <p className="text-justify">MKP Cookbook <i>Be a chef </i>Cook delicious meal with our recipes</p> */}
           </div>
 
           <div className="col-xs-6 col-md-3">

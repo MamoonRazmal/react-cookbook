@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import cookbook3 from "./cookbook3.jpg";
 import "./style.css";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 export default function Landing_page() {
   return (
@@ -46,7 +48,8 @@ export default function Landing_page() {
           most famous Poetess Prinita and iam just Background Artist */}
         </p>
       </div>
-
+<Gallery/>
+<Footer/>
       <footer className="footer"></footer>
     </div>
     </>
