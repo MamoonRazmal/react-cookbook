@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom";
 import main_Breakfast_photo from "./main_Breakfast_photo.webp";
+import Video from "./Video";
 
 export default function Breakfast_Landing_Page() {
   return (
     <>
       <div className="breakfast_link">
+      <NavLink to={"/"} id="nav" activeClassName="active">
+          Home
+        </NavLink>
         <NavLink to={"/breakfast/prata"} id="nav" activeClassName="active">
           {" "}
-          Prate
+          Prata
         </NavLink>
         <NavLink
           to={"/breakfast/frenchfries"}
@@ -20,13 +24,12 @@ export default function Breakfast_Landing_Page() {
         <NavLink to={"/breakfast/sandwhich"} id="nav" activeClassName="active">
           Sandwhich
         </NavLink>
-        <NavLink to={"/"} id="nav" activeClassName="active">
-          Back to Main
-        </NavLink>
+       
       </div>
       <div className="Hero_section">
         <img src={main_Breakfast_photo} height="500px" alt="this " />
       </div>
+      <Video/>
       {/* <div className="details">
         <p>
           {" "}

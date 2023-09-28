@@ -3,6 +3,9 @@
 
   text-align: center;
 }
+body{
+  background-color: bisque;
+}
 
 .logo {
   height: 6em;
@@ -42,8 +45,10 @@
 
 .main_div {
   background-image: url(./Components/Background.jpg);
-  background-position: center;
-  background-size: cover;
+ 
+  
+  background-size: contain;
+background-repeat: no-repeat;
   color: white;
   padding: 5%;
 }

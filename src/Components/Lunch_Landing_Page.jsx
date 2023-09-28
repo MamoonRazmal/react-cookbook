@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 import main_lunch_photo from "./Main_Lunch_photo.jpeg";
+import Video from "./Video";
 
 export default function Lunch_Landing_Page() {
   //
   return (
     <>
       <div className="breakfast_link">
+      <NavLink to={"/"} id="nav" activeClassName="active">
+          Home
+        </NavLink>
         <NavLink to={"/Lunch/Vegbiryani"} id="nav" activeClassName="active">
           {" "}
           Veg Biryani
@@ -20,13 +24,12 @@ export default function Lunch_Landing_Page() {
         >
           Smoky Veg Patties
         </NavLink>
-        <NavLink to={"/"} id="nav" activeClassName="active">
-          Back TO Main
-        </NavLink>
+        
       </div>
       <div className="Hero_section">
         <img src={main_lunch_photo} height="500px" alt="this " />
       </div>
+      <Video/>
       {/* <div className="details">
         <p>
           {" "}

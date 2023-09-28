@@ -67,6 +67,8 @@ a {
   color:black;
   font-size: 18px;
   font-family: Lora;
+  color:rgb(4, 0, 0);
+  font-size: 30px;
 }
 
 a:hover {
