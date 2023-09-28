@@ -52,9 +52,12 @@
   .breakfast_link:hover{
     background-color:green;
   }
-  #nav {
-    color: white;
+ 
+  #navnew{
+    color:white;
   }
+  
+  
   .active {
     color: #1dac71;
   }

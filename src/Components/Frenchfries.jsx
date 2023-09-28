@@ -50,14 +50,21 @@ const getdata=async()=>{
     <span className="card-item-title">Ingredients</span>
     <ul className="checkmark">
     
-      <li>{x.food_ingredients}</li>
+    {console.log("this is the array you wanted",x.food_ingredients.split(","))}
+   <li> {x.food_ingredients.split(",").map((a)=>(
+      <li>{a}</li>
+      ))}
+    </li>
     </ul>
   </div>
   
   <div id="method">
   <span className="card-item-title">Method</span>
     <ul className="checkmark">
-      <li>{x.food_instruction}</li>
+    <li> {x.food_instruction.split(",").map((a)=>(
+      <li>{a}</li>
+      ))}
+    </li>
 
 
 </ul>

@@ -6,19 +6,19 @@ export default function Dinner_Landing_Page() {
   return (
     <>
       <div className="breakfast_link">
-      <NavLink to={"/"} id="nav" activeClassName="active">
+      <NavLink to={"/"} id="navnew" activeClassName="active">
           Home
         </NavLink>
-        <NavLink to={"/Dinner/Noodles"} id="nav" activeClassName="active">
+        <NavLink to={"/Dinner/Noodles"} id="navnew" activeClassName="active">
           {" "}
           Japanese Ramen
         </NavLink>
-        <NavLink to={"/Dinner/Rice"} id="nav" activeClassName="active">
+        <NavLink to={"/Dinner/Rice"} id="navnew" activeClassName="active">
           Fried Rice
         </NavLink>
 
-        <NavLink to={"/Dinner/Salad"} id="nav" activeClassName="active">
-          Fruitsalad
+        <NavLink to={"/Dinner/Salad"} id="navnew" activeClassName="active">
+          Fruit salad
         </NavLink>
       
       </div>
