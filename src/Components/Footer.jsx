@@ -33,7 +33,7 @@ export default function Footer(){
             </ul>
           </div>
         </div>
-        <hr/>
+       
       </div>
       <div className="container">
         <div className="row">

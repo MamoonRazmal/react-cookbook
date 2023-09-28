@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createClient } from "contentful";
 import { NavLink } from "react-router-dom";
+import "./Recipe.css";
 export default function Prata() {
   const [recepe, Setrecepe] = useState([]);
   const client = createClient({
@@ -29,28 +30,30 @@ export default function Prata() {
         if (x.fields.foodName === "Prata") {
           return (
             <>
-              <div className="mainClass">
-                <h1>{x.fields.foodName}</h1>
-              </div>
+               <div id="card-container">
+  <div id="card-title">{x.fields.foodName}</div>
+   <div id="recipe-image">
+    <img src={x.fields.foodPhoto.fields.file.url}/>
+   </div>
+  <div id="details">Prep time: <span className="detail-value">20 minutes</span> | Cook time: <span className="detail-value">55 minutes</span> | Yield: <span className="detail-value">Makes one loaf</span></div>
+  <div id="card-items">
+    <span className="card-item-title">Ingredients</span>
+    <ul className="checkmark">
+      <li>{x.fields.foodIngredients.map((x)=>(<li>{x}</li>))}</li>
+      
+    </ul>
+  </div>
+  
+  <div id="method">
+  <span className="card-item-title">Method</span>
+    <ul className="checkmark">
+      <li>{x.fields.foodInstruction.map((x)=>(<li>{x}</li>))}</li>
 
-              <div className="second">
-                <div className="instruction">
-                  Food instruction {x.fields.foodInstruction} <br></br>
-                </div>
 
-                <div className="imgs">
-                  <img
-                    src={x.fields.foodPhoto.fields.file.url}
-                    alt="French Fries"
-                    height="800px"
-                  />{" "}
-                </div>
-
-                <div className="ingrid">
-                  <p>Food Ingredient {x.fields.foodIngredients}</p>{" "}
-                </div>
-              </div>
-              <NavLink to={"/"}>Back to Main</NavLink>
+</ul>
+  </div>
+</div>
+              {/* <NavLink to={"/"}>Back to Main</NavLink> */}
             </>
           );
         }

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Main_Dinner_Photo from "./Main_Dinner_Photo.jpeg";
 
+
 export default function Dinner_Landing_Page() {
   return (
     <>
@@ -34,6 +35,7 @@ export default function Dinner_Landing_Page() {
           most famous Poetess Prinita and iam just Background Artist
         </p>
       </div>
+
 
       <footer className="footer">All right Reserved 2080</footer>
     </>

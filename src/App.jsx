@@ -21,6 +21,7 @@ import Footer from "./Components/Footer";
 import Not_found from "./Not_found";
 import RecipeSample from "./Components/RecipeSample";
 import Gallery from "./Components/Gallery";
+import Video from "./Components/Video";
 function App() {
   return (
     <>
@@ -46,8 +47,9 @@ function App() {
         <Route path="/breakfast/sandwhich" element={<Sandwhich />} />
         <Route path="*" element={<Not_found />} />
       </Routes>
-      {/* <Gallery/> */}
-      {/* <Footer/> */}
+      <Gallery/>
+      <Footer/>
+      {/* <Video/> */}
     </>
   );
 }
