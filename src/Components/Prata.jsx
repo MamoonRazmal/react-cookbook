@@ -1,29 +1,36 @@
 import { useEffect, useState } from "react";
+import CSSProperties from "react"
 import { createClient } from "contentful";
 import { NavLink } from "react-router-dom";
+import PuffLoader from "react-spinners/PuffLoader"
 import "./Recipe.css";
 export default function Prata() {
+  
   // const [recepe, Setrecepe] = useState([]);
   // const client = createClient({
   //   accessToken: "BfNWgp-dFg2W-jxgkIPYNce0IS8N6g9LJT1JA1uTbGQ",
   //   space: "0q4y2er5mofe",
   // });
-
+const[loading,setloading]=useState(false)
   const [recepe, Setrecepe] = useState([])
   const api="https://cookbook-backend-zliv.onrender.com/recepe/"
 const getdata=async()=>{
+  setloading(true)
   const res=await fetch(api)
   const data=await res.json()
   Setrecepe(data);
+  setloading(false);
   // const getdata = async () => {
   //   const entrydata = await client.getEntries();
   //   console.log("entries", entrydata.items);
   //   Setrecepe(entrydata.items);
    };
    useEffect(() => {
+   
     getdata();
     console.log("Recepe = ", recepe);
     console.log("this is the value of recepe2", recepe[1]);
+    
   }, []);
   //  <li>{x.food_ingredients.map((x)=>(<li>{x}</li>))}</li>
   // <li>{x.food_instruction?.map((x)=>(<li>{x}</li>))}</li>
@@ -32,8 +39,9 @@ const getdata=async()=>{
       <NavLink to={"/Breakfast"} id="nav" activeClassName="active">
         Breakfast
       </NavLink>
-
-      {recepe.map((x) => {
+     
+      {loading?  <div id="loader"> <PuffLoader color="#36d7b7" />  </div>:recepe.map((x) => {
+       
         console.log("this value is got from recepe.map ", x.food_name);
 
         if (x.food_name === "Prata") {
@@ -73,7 +81,7 @@ const getdata=async()=>{
             </>
           );
         }
-      })}
+      }) }
     </>
-  );
+  )
 }

@@ -167,7 +167,11 @@ body {
 .detail-value {
   color: #455560;
 }
-
+#loader{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
 #card-items {
   background: #ededed;
   font-family: 'Oxygen', sans-serif;

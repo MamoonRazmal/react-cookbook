@@ -3,19 +3,23 @@ import { useEffect, useState } from "react";
 import "./style.css";
 import "./Recipe.css";
 import { NavLink } from "react-router-dom";
+import PuffLoader from "react-spinners/PuffLoader"
+
 export default function Rice() {
   // const [recepe, Setrecepe] = useState([]);
   // const client = createClient({
   //   accessToken: "BfNWgp-dFg2W-jxgkIPYNce0IS8N6g9LJT1JA1uTbGQ",
   //   space: "0q4y2er5mofe",
   // });
-
+  const[loading,setloading]=useState(false)
   const [recepe, Setrecepe] = useState([])
   const api="https://cookbook-backend-zliv.onrender.com/recepe/"
 const getdata=async()=>{
+  setloading(true)
   const res=await fetch(api)
   const data=await res.json()
   Setrecepe(data);
+  setloading(false)
   // const getdata = async () => {
   //   const entrydata = await client.getEntries();
   //   console.log("entries", entrydata.items);
@@ -34,7 +38,7 @@ const getdata=async()=>{
         Dinner
       </NavLink>
 
-      {recepe.map((x) => {
+      {loading?  <div id="loader"> <PuffLoader color="#36d7b7" />  </div>:recepe.map((x) => {
         console.log("this value is got from recepe.map ", x.food_name);
 
         if (x.food_name === "Fried Rice") {
